@@ -1,0 +1,6 @@
+venv/
+.env
+attack_results.json
+__pycache__/
+*.pyc
+*.pyo
