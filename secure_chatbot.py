@@ -550,7 +550,7 @@ function addMsg(role, text, info) {
     html += '<div class="atk">Type: ' + info.attack_type + '</div>';
     html += '<div class="atk">Detail: ' + info.detail + '</div>';
   } else {
-    html += text.replace(/\n/g, '<br>');
+    html += text.split('\\n').join('<br>');
   }
   html += '</div>';
   d.innerHTML = html;
